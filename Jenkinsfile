@@ -27,17 +27,17 @@ pipeline {
     post{
         success {
             script {
-                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, Ilya_Vasiliev@epam.com"
+                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, Ilya_Vasiliev@epam.com, anton.it.pavlov@gmail.com"
             }
         }
         unstable{
             script{
-                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, Ilya_Vasiliev@epam.com"
+                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, Ilya_Vasiliev@epam.com, anton.it.pavlov@gmail.com"
             }
         }
         failure{
             script{
-                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, Ilya_Vasiliev@epam.com"
+                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, Ilya_Vasiliev@epam.com, anton.it.pavlov@gmail.com"
             }
         }
     }
