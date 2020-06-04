@@ -4,13 +4,13 @@ pipeline {
         maven 'Maven'
         allure 'allure'
     }
-//    stages {
-//        stage('clone repository') {
-//            steps {
-//                deleteDir()
+    stages {
+        stage('clone repository') {
+            steps {
+                deleteDir()
 //                git branch: 'master', credentialsId: 'gitlab_new', url: 'https://github.com/Antonppavlov/my-first-project-at.git'
-//            }
-//        }
+            }
+        }
 //        stage('run tests') {
 //            steps {
 //                sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://192.168.222.198:4444/wd/hub"
@@ -21,7 +21,7 @@ pipeline {
 //                allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
 //            }
 //        }
-//    }
+    }
 
 
     post{
