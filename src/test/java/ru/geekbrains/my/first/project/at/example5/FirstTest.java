@@ -26,11 +26,11 @@ public class FirstTest {
     @ParameterizedTest
     @ValueSource(strings = {
             "Курсы",
-            "Вебинары",
-            "Форум",
-            "Блог",
-            "Тесты",
-            "Карьера"
+//            "Вебинары",
+//            "Форум",
+//            "Блог",
+//            "Тесты",
+//            "Карьера"
     })
     @Feature("Проверка перехода")
     public void button(String name) {
