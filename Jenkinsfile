@@ -27,17 +27,17 @@ pipeline {
     post{
         success {
             script {
-                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
+                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, anton.it.pavlov@gmail.com"
             }
         }
         unstable{
             script{
-                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
+                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, anton.it.pavlov@gmail.com"
             }
         }
         failure{
             script{
-                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
+                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "appavlov@innotechnum.com, anton.it.pavlov@gmail.com"
             }
         }
     }
