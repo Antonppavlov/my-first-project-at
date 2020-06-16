@@ -13,7 +13,7 @@ pipeline {
         }
         stage('run tests') {
             steps {
-                sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://192.168.222.198:4444/wd/hub"
+                sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://192.168.222.191:4444/wd/hub"
             }
         }
         stage('generate allure report') {
@@ -27,17 +27,17 @@ pipeline {
     post{
         success {
             script {
-                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
+                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
             }
         }
         unstable{
             script{
-                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
+                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
             }
         }
         failure{
             script{
-                emailext  body: '${SCRIPT, template="allure-report.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
+                emailext  body: '${SCRIPT, template="allure-report2.groovy"}', subject: "Втб-Онлайн. Запуск тестов. ${BUILD_URL}", to: "anton.it.pavlov@gmail.com"
             }
         }
     }
