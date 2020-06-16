@@ -146,7 +146,7 @@
                             <outputDirectory>${basedir}\target\allure-results</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src\test\resources\categories</directory>
+                                    <directory>src\test\resources</directory>
                                     <!--<filtering>true</filtering>-->
                                 </resource>
                             </resources>
