@@ -1,5 +1,5 @@
 # Project exclude paths
 /target/
-allure
+src/test/resources/allure
 my-first-project-at.iml
 .idea
