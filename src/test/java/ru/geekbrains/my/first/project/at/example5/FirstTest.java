@@ -8,6 +8,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import sun.security.util.PendingException;
 
 @Story("Навигация")
 public class FirstTest {
@@ -23,15 +24,15 @@ public class FirstTest {
     @ParameterizedTest
     @ValueSource(strings = {
             "Курсы",
-//            "Вебинары",
-//            "Форум",
-//            "Блог",
-//            "Тесты",
-//            "Карьера"
+            "Вебинары",
+            "Форум",
+            "Блог",
+            "Тесты",
+            "Карьера"
     })
     @Feature("Проверка перехода")
     public void button(String name) {
-        throw new NullPointerException();
+        throw new PendingException();
 //        Selenide.open("https://geekbrains.ru/courses");
 //        Page page = new Page();
 //        page.getNavigation().getButton(name).click();

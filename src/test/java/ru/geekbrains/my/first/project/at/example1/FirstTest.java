@@ -1,24 +1,22 @@
-//package ru.geekbrains.my.first.project.at.example1;
-//
-//import com.codeborne.selenide.Condition;
-//import com.codeborne.selenide.Selenide;
-//import org.junit.Test;
-//
-//public class FirstTest {
-//
-////1.Зайти на сайт https://geekbrains.ru/courses
-////2.Нажать на кнопку Курсы
-////3.Проверить что страница Курсы открылась
-////4.Повторить для
-////     1.Курсы
-////     2.Вебинары
-////     3.Форум
-////     4.Блог
-////     5.Тесты
-////     6.Карьера
-//
-//    @Test
-//    public void checkNavigation() {
+package ru.geekbrains.my.first.project.at.example1;
+
+import org.junit.Test;
+
+public class FirstTest {
+
+//1.Зайти на сайт https://geekbrains.ru/courses
+//2.Нажать на кнопку Курсы
+//3.Проверить что страница Курсы открылась
+//4.Повторить для
+//     1.Курсы
+//     2.Вебинары
+//     3.Форум
+//     4.Блог
+//     5.Тесты
+//     6.Карьера
+
+    @Test
+    public void checkNavigation() {
 //        Selenide.open("https://geekbrains.ru/courses");
 //
 //        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/courses\"]").click();
@@ -38,5 +36,5 @@
 //
 //        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/career\"]").click();
 //        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Карьера"));
-//    }
-//}
+    }
+}

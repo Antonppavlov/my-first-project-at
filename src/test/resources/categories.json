@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Тесты не запускались",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Проблемы МРТ",
+    "matchedStatuses": ["unknown"]
+  },
+  {
+    "name": "Тесты не прошли",
+    "matchedStatuses": ["broken", "failed"]
+  }
+]
