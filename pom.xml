@@ -147,7 +147,7 @@
                             <resources>
                                 <resource>
                                     <directory>src/test/resources</directory>
-                                    <include>**/categories.json</include>
+                                    <include>categories.json</include>
                                 </resource>
                             </resources>
                         </configuration>
