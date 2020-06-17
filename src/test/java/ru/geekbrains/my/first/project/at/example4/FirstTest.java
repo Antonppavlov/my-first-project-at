@@ -3,7 +3,6 @@ package ru.geekbrains.my.first.project.at.example4;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -28,7 +27,7 @@ public class FirstTest {
             "Карьера"
     })
     public void button(String name) {
-        Assert.fail();
+//        Assert.fail();
 //        Selenide.open("https://geekbrains.ru/courses");
 //        Page page = new Page();
 //        page.getNavigation().getButton(name).click();

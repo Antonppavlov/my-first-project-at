@@ -6,6 +6,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import sun.security.util.PendingException;
@@ -30,6 +31,7 @@ public class FirstTest {
             "Тесты",
             "Карьера"
     })
+    @Disabled
     @Feature("Проверка перехода")
     public void button(String name) {
         throw new PendingException();
